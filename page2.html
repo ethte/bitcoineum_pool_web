@@ -37,7 +37,7 @@ var _hmt = _hmt || [];
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">一号矿池查询</a>
+                <a class="navbar-brand" href="index.html">二号矿池查询</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,7 +66,7 @@ var _hmt = _hmt || [];
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>BTE查询</h1>
-                        <h4>鲨鱼一号矿池BTE挖矿查询</h4>
+                        <h4>鲨鱼二号矿池BTE挖矿查询</h4>
 
 <div class="input-group">
 <span class="input-group-addon" id="basic-addon1">地址</span>
@@ -88,10 +88,10 @@ var _hmt = _hmt || [];
 </div>
  
 <div class="input-group">
-<span class="input-group-addon" id="basic-addon1">池内的ETH</span>
+<span class="input-group-addon" id="basic-addon1">未兑取ETH</span>
 <input type="text" class="form-control2" id="test2" value="" placeholder="当前池内的ETH总数" aria-describedby="basic-addon1"/>
 </div>
- 
+
 <div class="alert alert-danger" role="alert">感谢源码贡献： @大乌贼 ("\(●-●)/") </p>多矿池支持 <a href="http://weibo.com/ai2401">Orange</a><p>  </p> 前端实现：<a href="http://t.xiaomiquan.com/IqbQb6M">ETHTE</a> </p>
 </div>
                     </div>
@@ -121,7 +121,7 @@ web3.setProvider(new Web3.providers.HttpProvider("https://web3.token.im"));
 
 var abi = [{"constant":true,"inputs":[],"name":"current_external_block","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"claimed_blocks","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"calculate_minimum_contribution","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"pool_name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"attempts","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"available_slots","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"divisible_units","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_blockNum","type":"uint256"},{"name":"_sender","type":"address"}],"name":"checkMiningAttempt","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"mine","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_who","type":"address"}],"name":"find_contribution","outputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"users","outputs":[{"name":"start_block","type":"uint256"},{"name":"end_block","type":"uint256"},{"name":"proportional_contribution","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"blockCreationRate","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"mined_blocks","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"max_users","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"get_bitcoineum_contract_address","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"redeem","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"contract_period","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_blockNum","type":"uint256"}],"name":"checkWinning","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_blockNumber","type":"uint256"},{"name":"forCreditTo","type":"address"}],"name":"claim","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"pool_percentage","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_percentage","type":"uint8"}],"name":"set_pool_percentage","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"total_users","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"active_users","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"_externalBlockNum","type":"uint256"}],"name":"external_to_internal_block_number","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"inputs":[],"payable":false,"type":"constructor"},{"payable":true,"type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"_info","type":"uint256"}],"name":"LogEvent","type":"event"}]
 
-var address = "0x29aa20fb9b23421e310bdb8a7cfb81d7fbb4a1b3";
+var address = "0x4c13184721de2d1b47a8875775ba3ce0b2e00ee0";
 
 var metacoin = web3.eth.contract(abi).at(address);
 
