@@ -5,6 +5,6 @@ pools.bigshark.club
 
 #### 感谢源码贡献： @大乌贼 ("\(●-●)/")
 
-#### 做了一点微小的工作 Orange
+#### 多矿池支持 Orange
 
-#### 界面优化：ETHTE
+#### 前端实现：ETHTE
